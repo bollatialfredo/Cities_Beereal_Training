@@ -1,7 +1,7 @@
 import pymysql
-MAX_POPULATION = 1000000
+MAX_POPULATION = 4000000
 
-class CitiesData(object):
+class CitiesDataExt(object):
 
     def all():
 
@@ -13,7 +13,3 @@ class CitiesData(object):
         data = cur.fetchall()
 
         return data
-
-
-# print('cities retrieved: {}'.format(row_count))
-# print(data)
